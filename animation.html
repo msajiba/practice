@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .stage {
+            background-color: lightcyan;
+            height: 300px;
+            min-width: 1000px;
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        @keyframes slider {
+            0% {
+                left: 0;
+                top: 0;
+                background-color: yellow;
+            }
+
+            25% {
+                left: 250px;
+                top: 200px;
+                background-color: red;
+            }
+
+            50% {
+                left: 500px;
+                top: 0;
+                background-color: yellow;
+            }
+
+            75% {
+                left: 750px;
+                top: 200px;
+                background-color: red;
+            }
+
+            100% {
+                left: 1000px;
+                top: 0;
+                background-color: yellow;
+            }
+
+        }
+
+        .stage:hover .ball {
+            animation: slider 4s ease 2s infinite alternate none;
+        }
+
+        .round {
+            height: 400px;
+            width: 500px;
+            background-color: lightpink;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: lime;
+            position: absolute;
+            border-radius: 50%;
+            animation: box 5s ease-in-out 2s infinite alternate;
+        }
+
+        .picture{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        @keyframes box {
+            0% {
+                left: 0;
+                top: 310px;
+                backgound-color: lime;
+            }
+
+            25% {
+                left: 400px;
+                top: 310px;
+                background-color: red;
+
+            }
+
+            50% {
+                left: 400px;
+                top: 600px;
+                background-color: yellow;
+            }
+
+            75% {
+                left: 0;
+                top: 600px;
+                background-color: darkblue;
+            }
+
+            100% {
+                left: 0;
+                top: 310px;
+                background-color: darkgray;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+    <div class="round">
+        <div class="circle">
+            <img class=" picture" src="img/virat.gif" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

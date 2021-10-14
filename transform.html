@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+
+    <style>
+        .box-one{
+            height: 100px;
+            width: 100px;
+            background-image: linear-gradient(tomato,red);
+        }
+        .box-two{
+            height: 100px;
+            width: 100px;
+            background-image: linear-gradient(gray,blue);
+            transform: scale(2,1) rotate(30deg) translate(120px, 30px) skew(20deg,10deg);
+        }
+        .box-three{
+            width: 250px;
+            height: 150px;
+            background-image: linear-gradient(green,yellow);
+            transform: rotate(40deg) translatex(20px);
+        }
+    </style>
+</head>
+<body>
+   <div class="box-one">box-1</div> 
+   <div class="box-three">box-three</div>
+   <div class="box-two">box-2</div>
+
+</body>
+</html>

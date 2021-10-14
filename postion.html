@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>postion</title>
+
+    <style>
+     .container{
+        height: auto;
+        width: 100%;
+        position: relative;
+     }
+     img{
+         height: auto;
+        width: 100%;
+        opacity: 0.4;
+     }
+
+     .left-top{
+         position: absolute;
+         left: 0;
+         top: 0;
+         color: white;
+     }
+     .left-bottom{
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         color: white;
+     }
+     
+     .right-top{
+         position:absolute;
+         right: 0;
+         top: 0;
+         color: white;
+     }
+     .right-bottom{
+         position: absolute;
+         bottom: 0;
+         right: 0;
+         color: white;
+     }
+
+     .center{
+         position:fixed;
+         padding-top: 10px;
+         height: 30px;
+         width: 60px;
+         background-image: linear-gradient(blue,pink);
+         text-align: center;
+        top: 50%;
+         color: white;
+         left: 50%;
+     }
+    </style>
+</head>
+<body>
+  
+<div class="container">
+    <img src="/project-1/pic.jpg" alt="">
+    <div class="left-top">Left-top</div>
+    <div class="left-bottom">left-bottom</div>
+    <div class="right-top">right-top</div>
+    <div class="right-bottom">right-bottom</div>
+    <div class="center">center</div> 
+</div>
+
+
+</body>
+</html>
